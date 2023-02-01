@@ -19,7 +19,9 @@ public:
         cout << meter << "m " << centi << "c" << endl;
     }
 
-    Distance add(Distance f, Distance s)
+   friend Distance add(Distance , Distance);
+};
+ Distance add(Distance f, Distance s)
     {
         Distance temp;
         temp.meter = f.meter + s.meter;
@@ -31,7 +33,6 @@ public:
         }
         return temp;
     }
-};
 int main()
 {
     Distance d1, d2, sum;
