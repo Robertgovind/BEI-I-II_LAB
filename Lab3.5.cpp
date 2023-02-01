@@ -28,9 +28,9 @@ public:
         cout << "Enter roll no: " << endl;
         cin >> roll;
     }
-    void showAll()
+    void showAll(Name n)
     {
-        cout << "Name: " << name << endl;
+        cout << "Name: " << n.name << endl;
         cout << "Address: " << address << endl;
         cout << "Roll no: " << roll << endl;
     }
@@ -42,6 +42,6 @@ int main()
     n.readName();
     Details d;
     d.readDetails();
-    d.showAll();
+    d.showAll(n);
     return 0;
 }
